@@ -7,39 +7,23 @@
     <title>Trabalhando com estilos</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        div {
-            height: 250px;
-            background-color: #2222;
-            border: 1px solid rgb(78, 78, 78);
-            border-radius: 3px;
-            margin-bottom: 10px;
-            font-family: ;
-        }
-
-        header>div {
-            background-color: antiquewhite;
-        }
-
-        section+section {
-            background-color: #333;
-            border-radius: 3px;
-        }
-    </style>
 </head>
 
-<body>
-    <header>
+<body class="bg-slate-900 text-white" >
+    <header class="mx-auto max-w-screen-lg px-3 py-6 flex items-center justify-between">
         <!-- LOGO -->
-        <div>
-            <h1 class="text-2xl font-bold">
-                Hello world!
-            </h1>
+        <div class="font-bold text-xl text-cyan-600">
+            😎 Meu Portfolio...
         </div>
 
         <!-- LINKS -->
         <div>
-            <h2>LINKS</h2>
+            <ul class="flex gap-x-3 font-medium text-gray-200">
+                <li><a href="#"class="hover:underline">Projetos</a></li>
+                <li><a href="#"class="hover:underline">Github</a></li>
+                <li><a href="#"class="hover:underline">LinkedIn</a></li>
+                <li><a href="#"class="hover:underline">Instagram</a></li>
+            </ul>
         </div>
     </header>
 
